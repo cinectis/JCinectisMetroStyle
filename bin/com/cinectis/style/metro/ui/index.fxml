@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="570.0" prefWidth="1059.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+	<children>
+		<HBox layoutX="10.0" layoutY="14.0" prefWidth="773.0" spacing="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0">
+			<children>
+				<Button disable="true" mnemonicParsing="false" text="Disabled" />
+            <Button mnemonicParsing="false" text="Normal" />
+				<Button mnemonicParsing="false" styleClass="btn-default" text="Default" />
+				<Button mnemonicParsing="false" styleClass="btn-primary" text="Primary" />
+				<Button mnemonicParsing="false" styleClass="btn-info" text="Info" />
+				<Button mnemonicParsing="false" styleClass="btn-success" text="Success" />
+				<Button mnemonicParsing="false" styleClass="btn-warning" text="Warning" />
+				<Button mnemonicParsing="false" styleClass="btn-danger" text="Danger" />
+				<Button mnemonicParsing="false" styleClass="btn-inverse" text="Inverse" />
+				<Button mnemonicParsing="false" styleClass="btn-white" text="White" />
+			</children>
+		</HBox>
+		<VBox layoutX="10.0" layoutY="88.0" prefHeight="239.0" prefWidth="1039.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0">
+			<children>
+				<AnchorPane prefHeight="50.0" prefWidth="100.0">
+					<styleClass>
+						<String fx:value="pane" />
+						<String fx:value="pane-default" />
+					</styleClass>
+					<children>
+						<Label layoutX="58.0" layoutY="17.0" text="Default" />
+						<Button layoutX="118.0" layoutY="11.0" mnemonicParsing="false" text="Button" />
+						<CheckBox layoutX="217.0" layoutY="17.0" mnemonicParsing="false" styleClass="check-box-white" text="White" />
+						<RadioButton layoutX="305.0" layoutY="17.0" mnemonicParsing="false" styleClass="radio-button-white" text="White" />
+						<Hyperlink layoutX="427.0" layoutY="14.0" text="Hyperlink" />
+						<TextField layoutX="520.0" layoutY="13.0" promptText="Success" styleClass="field-success" />
+                  <ComboBox layoutX="691.0" layoutY="13.0" prefHeight="25.0" prefWidth="87.0" promptText="White" styleClass="combo-box-white">
+                     <items>
+                        <FXCollections fx:factory="observableArrayList">
+                           <String fx:value="White" />
+                           <String fx:value="White" />
+                           <String fx:value="White" />
+                        </FXCollections>
+                     </items>
+                  </ComboBox>
+					</children>
+				</AnchorPane>
+				<AnchorPane prefHeight="50.0" prefWidth="100.0">
+					<children>
+						<Label layoutX="58.0" layoutY="17.0" text="Dark" />
+						<Button layoutX="118.0" layoutY="11.0" mnemonicParsing="false" text="Button" />
+						<CheckBox layoutX="217.0" layoutY="17.0" mnemonicParsing="false" styleClass="check-box-light" text="Light" />
+						<RadioButton layoutX="305.0" layoutY="17.0" mnemonicParsing="false" styleClass="radio-button-light" text="Light" />
+						<Hyperlink layoutX="427.0" layoutY="14.0" text="Hyperlink" />
+						<TextField layoutX="520.0" layoutY="13.0" promptText="Info" styleClass="field-info" />
+                  <ComboBox layoutX="696.0" layoutY="13.0" prefHeight="25.0" prefWidth="87.0" promptText="Light" styleClass="combo-box-light">
+                     <items>
+                        <FXCollections fx:factory="observableArrayList">
+                           <String fx:value="Light" />
+                           <String fx:value="Light" />
+                           <String fx:value="Light" />
+                        </FXCollections>
+                     </items>
+                  </ComboBox>
+					</children>
+					<styleClass>
+						<String fx:value="pane" />
+						<String fx:value="pane-dark" />
+					</styleClass>
+				</AnchorPane>
+				<AnchorPane prefHeight="50.0" prefWidth="100.0">
+					<children>
+						<Label layoutX="58.0" layoutY="17.0" text="Light" />
+						<Button layoutX="118.0" layoutY="11.0" mnemonicParsing="false" text="Button" />
+						<CheckBox layoutX="217.0" layoutY="17.0" mnemonicParsing="false" styleClass="check-box-dark" text="Dark" />
+						<RadioButton layoutX="305.0" layoutY="17.0" mnemonicParsing="false" styleClass="radio-button-dark" text="Dark" />
+						<Hyperlink layoutX="427.0" layoutY="14.0" text="Hyperlink" />
+						<TextField layoutX="520.0" layoutY="11.0" promptText="Warning" styleClass="field-warning" />
+                  <ComboBox layoutX="698.0" layoutY="13.0" prefHeight="25.0" prefWidth="87.0" promptText="Dark" styleClass="combo-box-dark">
+                     <items>
+                        <FXCollections fx:factory="observableArrayList">
+                           <String fx:value="Dark" />
+                           <String fx:value="Dark" />
+                           <String fx:value="Dark" />
+                        </FXCollections>
+                     </items>
+                  </ComboBox>
+					</children>
+					<styleClass>
+						<String fx:value="pane" />
+						<String fx:value="pane-light" />
+					</styleClass>
+				</AnchorPane>
+				<AnchorPane prefHeight="50.0" prefWidth="100.0">
+					<children>
+						<Label layoutX="58.0" layoutY="17.0" text="White" />
+						<Button layoutX="118.0" layoutY="11.0" mnemonicParsing="false" text="Button" />
+						<CheckBox layoutX="217.0" layoutY="17.0" mnemonicParsing="false" styleClass="check-box-default" text="Default" />
+						<RadioButton layoutX="305.0" layoutY="17.0" mnemonicParsing="false" styleClass="radio-button-default" text="Default" />
+						<Hyperlink layoutX="427.0" layoutY="14.0" text="Hyperlink" />
+						<TextField layoutX="520.0" layoutY="13.0" promptText="Error" styleClass="field-error" />
+                  <ComboBox layoutX="695.0" layoutY="12.0" prefHeight="25.0" prefWidth="87.0" promptText="Default" styleClass="combo-box-default">
+                     <items>
+                        <FXCollections fx:factory="observableArrayList">
+                           <String fx:value="Default" />
+      					 <String fx:value="Default" />
+      					 <String fx:value="Default" />
+                        </FXCollections>
+                     </items>
+                  </ComboBox>
+					</children>
+					<styleClass>
+						<String fx:value="pane" />
+						<String fx:value="pane-white" />
+					</styleClass>
+				</AnchorPane>
+			</children>
+		</VBox>
+		<TextField layoutX="10.0" layoutY="52.0" promptText="Default" />
+		<TextField layoutX="188.0" layoutY="52.0" promptText="Line" styleClass="field-line" />
+		<Label layoutX="22.0" layoutY="326.0" styleClass="heading-1" text="Heading 1" />
+		<Label layoutX="136.0" layoutY="326.0" styleClass="heading-2" text="Heading 2" />
+		<Label layoutX="247.0" layoutY="326.0" styleClass="heading-3" text="Heading 3" />
+		<Label layoutX="430.0" layoutY="326.0" styleClass="normal" text="Normal" />
+		<Label layoutX="528.0" layoutY="326.0" styleClass="small" text="Small" />
+		<Label layoutX="623.0" layoutY="326.0" styleClass="nano" text="Nano" />
+		<Label layoutX="22.0" layoutY="373.0" styleClass="label-default" text="Default" />
+		<Label layoutX="124.0" layoutY="373.0" styleClass="label-success" text="Success" />
+		<Label layoutX="235.0" layoutY="373.0" styleClass="label-info" text="Info" />
+		<Label layoutX="337.0" layoutY="373.0" styleClass="label-warning" text="Warning" />
+		<Label layoutX="435.0" layoutY="373.0" styleClass="label-danger" text="Danger" />
+		<Label layoutX="333.0" layoutY="326.0" styleClass="heading-4" text="Heading 4" />
+				<ComboBox layoutX="370.0" layoutY="52.0" prefHeight="25.0" prefWidth="87.0" promptText="Normal">
+					<items>
+						<FXCollections fx:factory="observableArrayList">
+							<String fx:value="Normal" />
+							<String fx:value="Normal" />
+							<String fx:value="Normal" />
+						</FXCollections>
+					</items>
+				</ComboBox>
+      <CheckBox layoutX="497.0" layoutY="57.0" mnemonicParsing="false" text="Normal" />
+      <RadioButton layoutX="594.0" layoutY="57.0" mnemonicParsing="false" text="Normal" />
+	</children>
+</AnchorPane>
