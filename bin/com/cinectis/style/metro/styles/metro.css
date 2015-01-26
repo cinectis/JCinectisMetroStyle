@@ -1347,24 +1347,6 @@
 /*
  * White TabPane
  */
- 	.accordion-white TitledPane{
-		-fx-text-fill: #1ba1e2;
-	}
-	.accordion-white TitledPane .title{
- 		-fx-background-color: #ffffff;
- 		-fx-border-color: #eeeeee;
- 		-fx-border-width: 0 0 1px 0;
- 		-fx-border-insets: 1px;
- 		-fx-background-insets: 0 0 0px 0;
- 		-fx-border-style: solid inside;
- 	}
- 	.accordion-white TitledPane .content{
- 		-fx-background-color: white;
- 		-fx-border-color: #eeeeee;
- 		-fx-text-fill: #222222;
- 	}
-	
-	
 	
 	.tab-pane-white .tab-header-area .tab-header-background{
  		-fx-border-color: transparent transparent #ffffff transparent;
